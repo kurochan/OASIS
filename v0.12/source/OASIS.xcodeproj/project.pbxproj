@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		0BC6D1AA12C4CF0C001EA740 /* asmhead.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; path = asmhead.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1AB12C4CF0C001EA740 /* bootsec.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; path = bootsec.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1AC12C4CF0C001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D1AD12C4CF0C001EA740 /* oasis.ld */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = text; path = oasis.ld; sourceTree = SOURCE_ROOT; };
+		0BC6D1AF12C4CF32001EA740 /* asmfunc.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc.asm; path = system/asmfunc.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1B012C4CF32001EA740 /* asmfunc.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = asmfunc.h; path = system/asmfunc.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1B112C4CF32001EA740 /* asmfunc_int.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_int.asm; path = system/asmfunc_int.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1B212C4CF32001EA740 /* asmfunc_system.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_system.asm; path = system/asmfunc_system.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1B412C4CF32001EA740 /* ide.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = ide.cpp; path = system/disk/ide.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1B512C4CF32001EA740 /* ide.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = ide.h; path = system/disk/ide.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1B612C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/disk/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D1B712C4CF32001EA740 /* dsctbl.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = dsctbl.cpp; path = system/dsctbl.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1B912C4CF32001EA740 /* fifo.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = fifo.cpp; path = system/fifo/fifo.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1BA12C4CF32001EA740 /* fifo.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = fifo.h; path = system/fifo/fifo.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1BB12C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/fifo/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D1BC12C4CF32001EA740 /* funcCaller.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = funcCaller.h; path = system/funcCaller.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1BE12C4CF32001EA740 /* crt0.s */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm; name = crt0.s; path = system/gcc/crt0.s; sourceTree = SOURCE_ROOT; };
+		0BC6D1BF12C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/gcc/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D1C012C4CF32001EA740 /* syscalls.c */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.c; name = syscalls.c; path = system/gcc/syscalls.c; sourceTree = SOURCE_ROOT; };
+		0BC6D1C212C4CF32001EA740 /* aqua.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = aqua.cpp; path = system/graphic/aqua.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1C312C4CF32001EA740 /* aqua.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = aqua.h; path = system/graphic/aqua.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1C412C4CF32001EA740 /* d3module.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = d3module.cpp; path = system/graphic/d3module.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1C512C4CF32001EA740 /* d3module.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = d3module.h; path = system/graphic/d3module.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1C612C4CF32001EA740 /* graphic.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = graphic.cpp; path = system/graphic/graphic.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1C712C4CF32001EA740 /* graphic.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = graphic.h; path = system/graphic/graphic.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1C812C4CF32001EA740 /* HSV2RGB.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = HSV2RGB.cpp; path = system/graphic/HSV2RGB.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1C912C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/graphic/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D1CA12C4CF32001EA740 /* sheet.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = sheet.cpp; path = system/graphic/sheet.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1CB12C4CF32001EA740 /* sheet.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = sheet.h; path = system/graphic/sheet.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1CC12C4CF32001EA740 /* window.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = window.cpp; path = system/graphic/window.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1CD12C4CF32001EA740 /* window.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = window.h; path = system/graphic/window.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1CE12C4CF32001EA740 /* HSV2RGB.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = HSV2RGB.cpp; path = system/HSV2RGB.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1D012C4CF32001EA740 /* inputdev.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = inputdev.cpp; path = system/inputdev/inputdev.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1D112C4CF32001EA740 /* inputdev.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = inputdev.h; path = system/inputdev/inputdev.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1D212C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/inputdev/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D1D312C4CF32001EA740 /* int.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = int.cpp; path = system/int.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1D412C4CF32001EA740 /* int.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = int.h; path = system/int.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1D512C4CF32001EA740 /* kernel.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = kernel.h; path = system/kernel.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1D612C4CF32001EA740 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = system/main.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1D712C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D1D912C4CF32001EA740 /* asm_memory.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asm_memory.asm; path = system/memory/asm_memory.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1DA12C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/memory/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D1DB12C4CF32001EA740 /* memory.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = memory.cpp; path = system/memory/memory.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1DC12C4CF32001EA740 /* memory.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = memory.h; path = system/memory/memory.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1DD12C4CF32001EA740 /* new.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = new.cpp; path = system/memory/new.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1DE12C4CF32001EA740 /* new.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = new.h; path = system/memory/new.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1E012C4CF32001EA740 /* hankaku.txt */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = text; name = hankaku.txt; path = system/obj/hankaku.txt; sourceTree = SOURCE_ROOT; };
+		0BC6D1E112C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/obj/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D1E212C4CF32001EA740 /* pointer.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = pointer.bmp; path = system/obj/pointer.bmp; sourceTree = SOURCE_ROOT; };
+		0BC6D1E412C4CF32001EA740 /* asmfunc_0.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_0.asm; path = system/ssememory/asmfunc_0.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1E512C4CF32001EA740 /* asmfunc_1.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_1.asm; path = system/ssememory/asmfunc_1.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1E612C4CF32001EA740 /* asmfunc_10.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_10.asm; path = system/ssememory/asmfunc_10.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1E712C4CF32001EA740 /* asmfunc_11.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_11.asm; path = system/ssememory/asmfunc_11.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1E812C4CF32001EA740 /* asmfunc_12.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_12.asm; path = system/ssememory/asmfunc_12.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1E912C4CF32001EA740 /* asmfunc_13.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_13.asm; path = system/ssememory/asmfunc_13.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1EA12C4CF32001EA740 /* asmfunc_14.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_14.asm; path = system/ssememory/asmfunc_14.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1EB12C4CF32001EA740 /* asmfunc_15.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_15.asm; path = system/ssememory/asmfunc_15.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1EC12C4CF32001EA740 /* asmfunc_2.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_2.asm; path = system/ssememory/asmfunc_2.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1ED12C4CF32001EA740 /* asmfunc_3.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_3.asm; path = system/ssememory/asmfunc_3.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1EE12C4CF32001EA740 /* asmfunc_4.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_4.asm; path = system/ssememory/asmfunc_4.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1EF12C4CF32001EA740 /* asmfunc_5.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_5.asm; path = system/ssememory/asmfunc_5.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1F012C4CF32001EA740 /* asmfunc_6.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_6.asm; path = system/ssememory/asmfunc_6.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1F112C4CF32001EA740 /* asmfunc_7.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_7.asm; path = system/ssememory/asmfunc_7.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1F212C4CF32001EA740 /* asmfunc_8.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_8.asm; path = system/ssememory/asmfunc_8.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1F312C4CF32001EA740 /* asmfunc_9.asm */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.asm.asm; name = asmfunc_9.asm; path = system/ssememory/asmfunc_9.asm; sourceTree = SOURCE_ROOT; };
+		0BC6D1F412C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/ssememory/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D1F512C4CF32001EA740 /* ssememcpy.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = ssememcpy.cpp; path = system/ssememory/ssememcpy.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1F612C4CF32001EA740 /* startup.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = startup.cpp; path = system/startup.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1F812C4CF32001EA740 /* aqua_task.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = aqua_task.cpp; path = system/task/aqua_task.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1F912C4CF32001EA740 /* counter_task.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = counter_task.cpp; path = system/task/counter_task.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1FA12C4CF32001EA740 /* idle_task.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = idle_task.cpp; path = system/task/idle_task.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1FC12C4CF32001EA740 /* command.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = command.cpp; path = system/task/main_task/command.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1FD12C4CF32001EA740 /* console.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = console.cpp; path = system/task/main_task/console.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D1FE12C4CF32001EA740 /* console.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = console.h; path = system/task/main_task/console.h; sourceTree = SOURCE_ROOT; };
+		0BC6D1FF12C4CF32001EA740 /* main_task.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = main_task.cpp; path = system/task/main_task/main_task.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D20012C4CF32001EA740 /* main_task.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = main_task.h; path = system/task/main_task/main_task.h; sourceTree = SOURCE_ROOT; };
+		0BC6D20112C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/task/main_task/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D20212C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/task/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D20312C4CF32001EA740 /* sample_02_basic.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = sample_02_basic.cpp; path = system/task/sample_02_basic.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D20412C4CF32001EA740 /* task.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = task.cpp; path = system/task/task.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D20512C4CF32001EA740 /* task.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = task.h; path = system/task/task.h; sourceTree = SOURCE_ROOT; };
+		0BC6D20612C4CF32001EA740 /* task_noVT_noTS.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = task_noVT_noTS.cpp; path = system/task/task_noVT_noTS.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D20712C4CF32001EA740 /* task_noVT_noTS.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = task_noVT_noTS.h; path = system/task/task_noVT_noTS.h; sourceTree = SOURCE_ROOT; };
+		0BC6D20812C4CF32001EA740 /* tasks.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = tasks.h; path = system/task/tasks.h; sourceTree = SOURCE_ROOT; };
+		0BC6D20912C4CF32001EA740 /* timer_task.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = timer_task.cpp; path = system/task/timer_task.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D20B12C4CF32001EA740 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.make; name = Makefile; path = system/timer/Makefile; sourceTree = SOURCE_ROOT; };
+		0BC6D20C12C4CF32001EA740 /* timer.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = timer.cpp; path = system/timer/timer.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D20D12C4CF32001EA740 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = timer.h; path = system/timer/timer.h; sourceTree = SOURCE_ROOT; };
+		0BC6D20E12C4CF32001EA740 /* timer_nVT_nTS.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.cpp.cpp; name = timer_nVT_nTS.cpp; path = system/timer/timer_nVT_nTS.cpp; sourceTree = SOURCE_ROOT; };
+		0BC6D20F12C4CF32001EA740 /* timer_nVT_nTS.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = timer_nVT_nTS.h; path = system/timer/timer_nVT_nTS.h; sourceTree = SOURCE_ROOT; };
+		0BC6D21012C4CF32001EA740 /* unsigned.h */ = {isa = PBXFileReference; fileEncoding = 2147486209; lastKnownFileType = sourcecode.c.h; name = unsigned.h; path = system/unsigned.h; sourceTree = SOURCE_ROOT; };
+		0BC6D27212C60A64001EA740 /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resource.h; path = system/resource.h; sourceTree = SOURCE_ROOT; };
+		0BC6D27312C60A64001EA740 /* resource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = resource.cpp; path = system/resource.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0BC6D19612C4CE03001EA740 = {
+			isa = PBXGroup;
+			children = (
+				0BC6D1AE12C4CF32001EA740 /* system */,
+				0BC6D1AA12C4CF0C001EA740 /* asmhead.asm */,
+				0BC6D1AB12C4CF0C001EA740 /* bootsec.asm */,
+				0BC6D1AC12C4CF0C001EA740 /* Makefile */,
+				0BC6D1AD12C4CF0C001EA740 /* oasis.ld */,
+			);
+			sourceTree = "<group>";
+		};
+		0BC6D1AE12C4CF32001EA740 /* system */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D1AF12C4CF32001EA740 /* asmfunc.asm */,
+				0BC6D1B012C4CF32001EA740 /* asmfunc.h */,
+				0BC6D1B112C4CF32001EA740 /* asmfunc_int.asm */,
+				0BC6D1B212C4CF32001EA740 /* asmfunc_system.asm */,
+				0BC6D1B312C4CF32001EA740 /* disk */,
+				0BC6D1B712C4CF32001EA740 /* dsctbl.cpp */,
+				0BC6D1B812C4CF32001EA740 /* fifo */,
+				0BC6D1BC12C4CF32001EA740 /* funcCaller.h */,
+				0BC6D1BD12C4CF32001EA740 /* gcc */,
+				0BC6D1C112C4CF32001EA740 /* graphic */,
+				0BC6D1CE12C4CF32001EA740 /* HSV2RGB.cpp */,
+				0BC6D1CF12C4CF32001EA740 /* inputdev */,
+				0BC6D1D312C4CF32001EA740 /* int.cpp */,
+				0BC6D1D412C4CF32001EA740 /* int.h */,
+				0BC6D1D512C4CF32001EA740 /* kernel.h */,
+				0BC6D1D612C4CF32001EA740 /* main.cpp */,
+				0BC6D1D712C4CF32001EA740 /* Makefile */,
+				0BC6D1D812C4CF32001EA740 /* memory */,
+				0BC6D1DF12C4CF32001EA740 /* obj */,
+				0BC6D1E312C4CF32001EA740 /* ssememory */,
+				0BC6D1F612C4CF32001EA740 /* startup.cpp */,
+				0BC6D1F712C4CF32001EA740 /* task */,
+				0BC6D20A12C4CF32001EA740 /* timer */,
+				0BC6D21012C4CF32001EA740 /* unsigned.h */,
+			);
+			path = system;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BC6D1B312C4CF32001EA740 /* disk */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D1B412C4CF32001EA740 /* ide.cpp */,
+				0BC6D1B512C4CF32001EA740 /* ide.h */,
+				0BC6D1B612C4CF32001EA740 /* Makefile */,
+			);
+			name = disk;
+			path = system/disk;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BC6D1B812C4CF32001EA740 /* fifo */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D1B912C4CF32001EA740 /* fifo.cpp */,
+				0BC6D1BA12C4CF32001EA740 /* fifo.h */,
+				0BC6D1BB12C4CF32001EA740 /* Makefile */,
+			);
+			name = fifo;
+			path = system/fifo;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BC6D1BD12C4CF32001EA740 /* gcc */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D1BE12C4CF32001EA740 /* crt0.s */,
+				0BC6D1BF12C4CF32001EA740 /* Makefile */,
+				0BC6D1C012C4CF32001EA740 /* syscalls.c */,
+			);
+			name = gcc;
+			path = system/gcc;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BC6D1C112C4CF32001EA740 /* graphic */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D1C212C4CF32001EA740 /* aqua.cpp */,
+				0BC6D1C312C4CF32001EA740 /* aqua.h */,
+				0BC6D1C412C4CF32001EA740 /* d3module.cpp */,
+				0BC6D1C512C4CF32001EA740 /* d3module.h */,
+				0BC6D1C612C4CF32001EA740 /* graphic.cpp */,
+				0BC6D1C712C4CF32001EA740 /* graphic.h */,
+				0BC6D1C812C4CF32001EA740 /* HSV2RGB.cpp */,
+				0BC6D1C912C4CF32001EA740 /* Makefile */,
+				0BC6D1CA12C4CF32001EA740 /* sheet.cpp */,
+				0BC6D1CB12C4CF32001EA740 /* sheet.h */,
+				0BC6D1CC12C4CF32001EA740 /* window.cpp */,
+				0BC6D1CD12C4CF32001EA740 /* window.h */,
+			);
+			name = graphic;
+			path = system/graphic;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BC6D1CF12C4CF32001EA740 /* inputdev */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D1D012C4CF32001EA740 /* inputdev.cpp */,
+				0BC6D1D112C4CF32001EA740 /* inputdev.h */,
+				0BC6D1D212C4CF32001EA740 /* Makefile */,
+			);
+			name = inputdev;
+			path = system/inputdev;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BC6D1D812C4CF32001EA740 /* memory */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D1D912C4CF32001EA740 /* asm_memory.asm */,
+				0BC6D1DA12C4CF32001EA740 /* Makefile */,
+				0BC6D1DB12C4CF32001EA740 /* memory.cpp */,
+				0BC6D1DC12C4CF32001EA740 /* memory.h */,
+				0BC6D1DD12C4CF32001EA740 /* new.cpp */,
+				0BC6D1DE12C4CF32001EA740 /* new.h */,
+			);
+			name = memory;
+			path = system/memory;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BC6D1DF12C4CF32001EA740 /* obj */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D1E012C4CF32001EA740 /* hankaku.txt */,
+				0BC6D1E112C4CF32001EA740 /* Makefile */,
+				0BC6D1E212C4CF32001EA740 /* pointer.bmp */,
+			);
+			name = obj;
+			path = system/obj;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BC6D1E312C4CF32001EA740 /* ssememory */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D1E412C4CF32001EA740 /* asmfunc_0.asm */,
+				0BC6D1E512C4CF32001EA740 /* asmfunc_1.asm */,
+				0BC6D1E612C4CF32001EA740 /* asmfunc_10.asm */,
+				0BC6D1E712C4CF32001EA740 /* asmfunc_11.asm */,
+				0BC6D1E812C4CF32001EA740 /* asmfunc_12.asm */,
+				0BC6D1E912C4CF32001EA740 /* asmfunc_13.asm */,
+				0BC6D1EA12C4CF32001EA740 /* asmfunc_14.asm */,
+				0BC6D1EB12C4CF32001EA740 /* asmfunc_15.asm */,
+				0BC6D1EC12C4CF32001EA740 /* asmfunc_2.asm */,
+				0BC6D1ED12C4CF32001EA740 /* asmfunc_3.asm */,
+				0BC6D1EE12C4CF32001EA740 /* asmfunc_4.asm */,
+				0BC6D1EF12C4CF32001EA740 /* asmfunc_5.asm */,
+				0BC6D1F012C4CF32001EA740 /* asmfunc_6.asm */,
+				0BC6D1F112C4CF32001EA740 /* asmfunc_7.asm */,
+				0BC6D1F212C4CF32001EA740 /* asmfunc_8.asm */,
+				0BC6D1F312C4CF32001EA740 /* asmfunc_9.asm */,
+				0BC6D1F412C4CF32001EA740 /* Makefile */,
+				0BC6D1F512C4CF32001EA740 /* ssememcpy.cpp */,
+			);
+			name = ssememory;
+			path = system/ssememory;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BC6D1F712C4CF32001EA740 /* task */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D27212C60A64001EA740 /* resource.h */,
+				0BC6D27312C60A64001EA740 /* resource.cpp */,
+				0BC6D1F812C4CF32001EA740 /* aqua_task.cpp */,
+				0BC6D1F912C4CF32001EA740 /* counter_task.cpp */,
+				0BC6D1FA12C4CF32001EA740 /* idle_task.cpp */,
+				0BC6D1FB12C4CF32001EA740 /* main_task */,
+				0BC6D20212C4CF32001EA740 /* Makefile */,
+				0BC6D20312C4CF32001EA740 /* sample_02_basic.cpp */,
+				0BC6D20412C4CF32001EA740 /* task.cpp */,
+				0BC6D20512C4CF32001EA740 /* task.h */,
+				0BC6D20612C4CF32001EA740 /* task_noVT_noTS.cpp */,
+				0BC6D20712C4CF32001EA740 /* task_noVT_noTS.h */,
+				0BC6D20812C4CF32001EA740 /* tasks.h */,
+				0BC6D20912C4CF32001EA740 /* timer_task.cpp */,
+			);
+			name = task;
+			path = system/task;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BC6D1FB12C4CF32001EA740 /* main_task */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D1FC12C4CF32001EA740 /* command.cpp */,
+				0BC6D1FD12C4CF32001EA740 /* console.cpp */,
+				0BC6D1FE12C4CF32001EA740 /* console.h */,
+				0BC6D1FF12C4CF32001EA740 /* main_task.cpp */,
+				0BC6D20012C4CF32001EA740 /* main_task.h */,
+				0BC6D20112C4CF32001EA740 /* Makefile */,
+			);
+			name = main_task;
+			path = system/task/main_task;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BC6D20A12C4CF32001EA740 /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6D20B12C4CF32001EA740 /* Makefile */,
+				0BC6D20C12C4CF32001EA740 /* timer.cpp */,
+				0BC6D20D12C4CF32001EA740 /* timer.h */,
+				0BC6D20E12C4CF32001EA740 /* timer_nVT_nTS.cpp */,
+				0BC6D20F12C4CF32001EA740 /* timer_nVT_nTS.h */,
+			);
+			name = timer;
+			path = system/timer;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		0BC6D19812C4CE03001EA740 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0BC6D19B12C4CE03001EA740 /* Build configuration list for PBXProject "OASIS" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0BC6D19612C4CE03001EA740;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		0BC6D19912C4CE03001EA740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		0BC6D19A12C4CE03001EA740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BC6D19B12C4CE03001EA740 /* Build configuration list for PBXProject "OASIS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BC6D19912C4CE03001EA740 /* Debug */,
+				0BC6D19A12C4CE03001EA740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BC6D19812C4CE03001EA740 /* Project object */;
+}
