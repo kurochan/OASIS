@@ -1,0 +1,26 @@
+ifeq (\$(OS),Windows_NT)
+# for Windows
+.....
+else
+UNAME = \${shell uname}
+
+ifeq (\$(UNAME),Linux)
+# for Linux
+.....
+endif
+
+ifeq (\$(UNAME),Darwin)
+# for MacOSX
+.....
+endif
+
+endif
+
+
+
+ifeq ($(OS),Windows_NT)
+# Windows 上で実行された
+	include Makefile.win
+else
+	include Makefile.lin
+endif
