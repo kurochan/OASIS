@@ -77,5 +77,12 @@ void enable_mouse(void) {
 	return;
 }
 
-
-
+/* リセット信号を出力 */
+void kbc_reset(void) {
+	wait_KBC_sendready();
+	/* キーボードコントローラ経由でCPUにリセット信号を出力 */
+	io_out8(PORT_KEYCMD, 0xfe);
+	while(true){
+		io_hlt();
+	}
+}

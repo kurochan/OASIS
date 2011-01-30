@@ -82,3 +82,4 @@ struct MOUSE_DEC {
 void enable_mouse(void);
 void init_keyboard(void);
 void wait_KBC_sendready(void) ;
+void kbc_reset(void);
